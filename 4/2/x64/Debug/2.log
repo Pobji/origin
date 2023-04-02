@@ -1,0 +1,4 @@
+﻿  2.cpp
+F:\Обучение\С++\Teachings!\Base Programming\4\2\2.cpp(34,26): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+F:\Обучение\С++\Teachings!\Base Programming\4\2\2.cpp(35,59): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  2.vcxproj -> F:\Обучение\С++\Teachings!\Base Programming\4\2\x64\Debug\2.exe
