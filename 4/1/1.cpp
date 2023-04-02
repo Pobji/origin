@@ -1,15 +1,16 @@
 ﻿#include <iostream>
 #include <fstream>
+#include <string>
 
 class adress
 {
 private:
 	std::string city;
 	std::string street;
-	std::string house_num;
-	std::string apartment_num;
+	int house_num;
+	int apartment_num;
 public:
-	void set_adress(std::string city, std::string street, std::string house_num, std::string apartment_num)
+	void set_adress(std::string city, std::string street, int house_num, int apartment_num)
 	{
 		this->city = city;
 		this->street = street;
@@ -18,7 +19,7 @@ public:
 	}
 	std::string new_format()
 	{
-		return city + ", " + street + ", " + house_num + ", " + apartment_num;
+		return city + ", " + street + ", " + std::to_string(house_num) + ", " + std::to_string(apartment_num);
 	}
 };
 
@@ -33,7 +34,8 @@ int main()
 		adress* list = new adress[count];
 		for (int i = 0; i < count; i++)
 		{
-			std::string city, street, house_num, apartment_num;
+			std::string city, street;
+			int house_num, apartment_num;
 			fin >> city;
 			fin >> street;
 			fin >> house_num;
